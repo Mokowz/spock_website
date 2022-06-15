@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@200;300;400;500;600&family=Kumbh+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+
+@font-face {
+    font-family: Mango;
+    src: url("Fonts/FontsFree-Net-Fontspring-DEMO-mangostyle-medium.ttf");
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 254, 254);
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+.home{
+    background-image: url("images/sahand-babali-owjrvbyXYyc-unsplash-min.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 255, 0.411);
+    background-blend-mode: multiply;
+    padding: 2em 4em;
+}
+.home-details{
+    color: white;
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    text-align: center;
+}
+.home-details h1, .about h1, .speeds-info h1, .plans h1{
+    font-size: 2.2em;
+    font-family: Mango;
+    text-align: center;
+}
+.home-details h2{
+    /* margin-bottom: -.5em; */
+    
+}
+h1, h2, p, span{
+    font-family: kumbh sans;
+}
+.speeds-card h1{
+    font-family: kumbh sans;
+}
+button{
+    padding: .8em 1.2em;
+    font-family: kumbh sans;
+    font-weight: 600;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+}
+.home-details button a {
+    text-decoration: none;
+    color: black;
+}
+.about{
+    height: auto;
+    padding: 2em 4em;
+    width: 100%;
+    padding-top: 100px;
+}
+.about-info{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.about-img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease;
+    object-fit: cover;
+}
+.about-details h2{
+    font-family: kumbh sans;
+}
+.about-details{
+    max-width: 600px;
+    margin-left: 6em;
+}
+.about-img:hover img{
+    transform: scale(1.2);
+}
+.about-details button{
+    margin-top: 1em;
+}
+.speeds{
+    min-height: 100vh;
+    width: 100%;
+    padding: 2em 4em;
+    padding-top: 100px;
+}
+.speeds-info{
+    margin: 0 auto;
+    max-width: 700px;
+}
+.speeds-info p{
+    font-size: 1.2em;
+    text-align: center;
+}
+.speeds-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 350px ;
+    /* border: 1px solid black ; */
+    padding: 1em;
+    text-align: center;
+    /* margin-left: 2.3em; */
+}
+.speeds-card h1{
+    margin-top: 1em;
+    margin-bottom: -.5em;
+}
+.speeds-card-icon{
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.speeds-card h1{
+    font-size: 1.2em;
+}
+.speeds-card p{
+    font-size: 1em;
+}
+
+.speeds-card-icon p{
+    text-align: center;
+}
+.speeds-card-icon img{
+    width: 32px;
+    height: 32px;
+}
+.speeds-card-container{
+    display: flex;
+    /* margin: 3em auto; */
+    justify-content: space-between;
+    
+}
+.plans{
+    min-height: 100vh;
+    background-color: rgba(243, 239, 239, 0.445);
+    padding: 2em 4em;
+    position: relative;
+    padding-top: 100px;
+}
+.chevron-right, .chevron-left{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rgba(0, 0, 0, 0.315); */
+    position: absolute;
+    top: 250px;
+}
+.chevron{
+    z-index: 9;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.199);
+    cursor: pointer;
+    pointer-events: all;
+}
+.chevron-right{
+    right: 5em;
+}
+.plans-card{
+    width: 200px;
+    height: 230px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1em;
+    transition: all .4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.3em;
+   
+}
+.plans-card:hover{
+    box-shadow: -1px 1px 6px rgba(66, 66, 66, 0.363);
+}
+.qifi{
+    color: blue;
+    font-size: 20px;
+}
+.internet-speed{
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.internet-name{
+    font-weight: 700;
+    font-size: .9em;
+}
+.internet-small-info{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.plans-card-container{
+    display: flex;
+    margin-top: 4em;
+    
+    margin: 4em auto;
+    max-width: 1000px;
+}
+.active{
+    border:1px solid blue ;
+    position: relative;
+    
+}
+
+#questions, .contacts{
+    min-height: 90vh;
+    padding-top: 100px;
+    background-color: rgb(255, 254, 254);
+}
+
+footer{
+    min-height: 10vh;
+    background-color: rgb(15, 15, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2em 4em;
+}
+footer p{
+    color: white;
+    max-width: 600px;
+
+}
+section{
+    padding-top: 100px;
+}
+.enda-juu{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 4em;
+}
+.enda-juu a{
+    color: black;
+    font-size: 20px;
+}
+
+.navbar-yote{
+    background-color: rgb(15, 15, 53);
+    height: 60px;
+    padding: 0 4em;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+}
+.logo{
+    color: white;
+    line-height: 60px;
+    font-family: mango;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    /* position:absolute; */
+    max-width: 600px;
+    margin: 0 auto;
+}
+.nav-list a li{
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    margin-left: 2em;
+    font-family: kumbh sans;
+}
+.nav-list a{
+    text-decoration: none;
+}
+
+.hamburger{
+    color: white;
+    font-size: 24px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.number, .location, .social-media{
+    padding: .6em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+}
+
+.social-media{
+    display: flex;
+}
+.sm-icon{
+    margin-right: 1em;
+}
+.app{
+    color: #25D366;
+}
+.ig{
+    color: #fb3958;
+}
+.fb{
+    color: #4267B2;
+}
+
+iframe{
+    height: 300px;
+}
+
+@media (max-width:1000px){
+    .hamburger{
+        display: block;
+    }
+    .navbar-yote{
+        justify-content: space-between;
+    }
+    /* .nav-list{
+        display: none;
+    } */
+    .nav-list{
+        margin-top: 60px;
+        height: 100vh;
+        background-color: rgb(15, 15, 53);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-1200px);
+        transition: all .4s ease;
+    }
+    .nav-list-tokea{
+        transform: translateY(0);
+        
+    }
+    .show{
+        transform: translateX(0px);
+    }
+    .home-details{
+        margin: 4em auto;
+    }
+    .home, .about{
+        padding: 1em;
+    }
+    h1{
+        font-size: 32px;
+    }
+
+    .about-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-details{
+        margin: 2em 0;
+        text-align: center;
+        
+    }
+    .about-details p{
+        font-size: 16px;
+    }
+    .speeds-card-container{
+        flex-direction: column;
+    }
+    .speeds-card{
+        width: 100%;
+        margin: 2em 0;
+        height: auto;
+    }
+    .plans-card:not(.active){
+        display: none;
+    }
+    .active{
+        margin: 4em auto;
+    }
+    .enda-juu{
+        right: 2em;
+    }
+    .chevron{
+        top: 350px;
+    }
+}
+
+@media (max-width:400px){
+    h1{
+        font-size: 32px;
+    }
+    nav{
+        padding: 1em;
+    }
+    .logo{
+        display: inline-block;
+        max-width: 200px;
+    }
+    .home{
+        padding: .5em;
+    }
+    .home-details h2{
+        font-size: 24px;
+    }
+    .plans{
+        padding: 2em;
+    }
+    .chevron-right{
+        right: 3em;
+    }
+    .enda-juu{
+        right: 1em;
+    }
+    footer p{
+        font-size: 16px;
+    }
+    .chevron{
+        top: 350px;
+    }
+    .chevron-left{
+        left: .5em;
+    }
+    .chevron-right{
+        right: .5em;
+    }
+}
